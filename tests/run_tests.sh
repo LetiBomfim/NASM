@@ -2,14 +2,14 @@ set -e
 
 PROG="./prog32"
 
+
 if [ ! -x "$PROG" ]; then
-    echo "Erro: executável '$PROG' não encontrado ou sem permissão de execução."
-    echo "Rode 'make' antes de executar os testes."
+    echo "Rode 'make'!!!"
     exit 1
 fi
 
 separador() {
-    echo "----------------------------------------------------------------------"
+    echo "-------------------------------"
 }
 
 teste() {
@@ -25,6 +25,8 @@ teste() {
 
 teste "Sem parâmetros"
 teste "Um parâmetro simples" "ola"
+
+
 teste "Múltiplos parâmetros" "primeiro" "segundo" "terceiro" "123"
 
 LONGA=$(printf 'a%.0s' {1..200})
@@ -35,5 +37,5 @@ teste "Caracteres acentuados/especiais" "coração" "Ação_2026!"
 teste "Parâmetro vazio" ""
 
 separador
-echo "Todos os testes foram executados."
+echo "Todos os testes foram executados!"
 separador
