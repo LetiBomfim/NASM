@@ -35,5 +35,5 @@ teste "Caracteres acentuados/especiais" "coração" "Ação_2026!"
 teste "Parâmetro vazio" ""
 
 separador
-echo "Todos os testes foram executados. Revise a saída acima."
+echo "Todos os testes foram executados."
 separador
