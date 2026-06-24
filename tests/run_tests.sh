@@ -4,12 +4,13 @@ PROG="./prog32"
 
 
 if [ ! -x "$PROG" ]; then
-    echo "Rode 'make'!!!"
+    echo "ERRO: Rode 'make'!!"
     exit 1
+
 fi
 
 separador() {
-    echo "-------------------------------"
+    echo "------------------------------------"
 }
 
 teste() {
@@ -37,5 +38,5 @@ teste "Caracteres acentuados/especiais" "coração" "Ação_2026!"
 teste "Parâmetro vazio" ""
 
 separador
-echo "Todos os testes foram executados!"
+echo "Todos os testes foram executados!!"
 separador
