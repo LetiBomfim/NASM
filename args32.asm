@@ -43,8 +43,8 @@ loop_argv:
   
     mov     edx, [esi + edi*4]   ; EDX = argv[i] (endereço da string i)
 
-    push    edx                  ; empilha argv[i] (3º arg do printf, na prática 2º vararg)
-    push    edi                  ; empilha i (2º arg do printf, 1º vararg)
+    push    edx                  ; empilha argv[i] (3º arg do printf)
+    push    edi                  ; empilha i (2º arg do printf)
     push    dword fmt_arg        ; empilha o formato (1º arg do printf)
     call    printf  
     add     esp, 12              ; desfaz os 3 dwords empilhados (3 x 4 bytes)
